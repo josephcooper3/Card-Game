@@ -15,4 +15,15 @@ public class Deck {
     public void addCard(Card card) {
         this.cards.add(card);
     }
+
+    public void addAllCards() {
+        for (SuitType suit:
+             SuitType.values()) {
+            for (RankType rank:
+                 RankType.values()) {
+                Card card = new Card(suit, rank);
+                this.cards.add(card);
+            }
+        }
+    }
 }

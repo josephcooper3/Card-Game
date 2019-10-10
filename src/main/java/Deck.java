@@ -26,4 +26,8 @@ public class Deck {
             }
         }
     }
+
+    public Card findCard(int index) {
+        return this.cards.get(index);
+    }
 }

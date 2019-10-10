@@ -31,4 +31,20 @@ public class DeckTest {
         assertEquals(52, deck.getCardCount());
     }
 
+    @Test
+    public void canFindCard(){
+        deck.addAllCards();
+        Card foundCard = deck.findCard(1);
+        assertEquals(SuitType.DIAMONDS, foundCard.getSuit());
+        assertEquals(RankType.TWO, foundCard.getRank());
+    }
+
+//    @Test
+//    public void canShuffle(){
+//        Deck shuffleDeck = new Deck();
+//        deck.addAllCards();
+//        shuffleDeck.addAllCards();
+//        shuffleDeck.shuffle();
+//    }
+
 }

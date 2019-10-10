@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Random;
 
 public class Deck {
 
@@ -29,5 +32,9 @@ public class Deck {
 
     public Card findCard(int index) {
         return this.cards.get(index);
+    }
+
+    public void shuffle() {
+        Collections.shuffle(this.cards);
     }
 }

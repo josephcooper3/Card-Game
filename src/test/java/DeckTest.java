@@ -39,12 +39,4 @@ public class DeckTest {
         assertEquals(RankType.TWO, foundCard.getRank());
     }
 
-//    @Test
-//    public void canShuffle(){
-//        Deck shuffleDeck = new Deck();
-//        deck.addAllCards();
-//        shuffleDeck.addAllCards();
-//        shuffleDeck.shuffle();
-//    }
-
 }
